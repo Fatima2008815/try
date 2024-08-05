@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فرضية دي برولي</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>فرضية دي برولي</h1>
+        <p>تجربة تفاعلية لعرض فرضية دي برولي</p>
+    </header>
+    <main>
+        <div class="input-section">
+            <label for="mass">الكتلة (kg):</label>
+            <input type="number" id="mass" value="9.11e-31" step="1e-31">
+            <label for="velocity">السرعة (m/s):</label>
+            <input type="number" id="velocity" value="1e6" step="1e5">
+            <button onclick="updateChart()">تحديث الرسم البياني</button>
+        </div>
+        <div id="chart"></div>
+    </main>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
